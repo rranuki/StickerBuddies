@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill it in!</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="form">
+            <h1 id="hi">In order to get a sticker, you will need to fill out this form!</h1>
+            <form name="gform" id="gform" enctype="text/plain"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSdL7nDCT3o8Ao0KYI_wyycA_sY-ZdLXuK-0fPUQhcQnkWXVCA/formResponse?"
+                target="hidden_iframe" onsubmit="submitted=true;">
+                <div class="left">
+                    <label for="entry.2011975985">What is your name?</label><br><br><br><br>
+                    <label for="entry.1547255295">What school do you go to?</label><br><br><br><br>
+                    <label for="entry.1530722911">What is your class?</label><br><br><br><br>
+                    <label for="entry.1066450418">Finally, we need your email in case we need to contact you!</label><br><br><br><br>
+                </div>
+                <div class="right">
+                    <input type="text" name="entry.2011975985" id="entry.2011975985" placeholder="Your Name"><br><br><br><br>
+                    <select name="entry.1547255295" id="entry.1547255295">
+                        <option selected value="Mackillop">Mackillop</option>
+                        <option value="Other">Other</option>
+                    </select><br><br><br><br>
+                    <input type="text" name="entry.1530722911" id="entry.1530722911" placeholder="Your Class"><br><br><br><br>
+                    <input type="email" name="entry.1066450418" id="entry.1066450418" placeholder="Your Email"><br><br><br><br>
+                 </div>
+                 <div class="buttonContainer">
+                    <a href="index.html"><button class="submit" value= "submit" type="submit" onclick="SendAnAlert()">Send your sticker buddy request!</button></a>
+                    <!-- <a href="index.html"><button>home</button></a> -->
+               </div>
+            </form>
+        </div>
+    </div>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+</body>
+<script src="form.js"></script>
+
+</html>

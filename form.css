@@ -1,0 +1,89 @@
+body{
+    margin-top: 0;
+    margin-left: -17px;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    background: url(StickerBuddy4.png);
+    background-size:cover;
+    filter: blur(5px) brightness(.85);
+}
+
+.form{
+    background-color:rgb(119, 0, 255) ;
+    box-shadow: 0 20px 15px rgb(64, 0, 138);
+    width: 900px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+
+    .left{
+        height: 90%;
+        width: 80%;
+        float: left;
+    }
+    .right{
+        height: 90%;
+        width: 20%;
+        float: right;
+    }
+}
+
+.container{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+label{
+    color:rgb(203, 255, 232);
+    font-family:cursive;
+    font-size: 16px;
+    font-weight: 100%;
+}    
+
+.buttonContainer{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.submit{
+    background-color: rgb(0, 84, 193);
+    height: 75px;
+    width: 300px;
+    border-radius: 50px;
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 18px;
+    color: white;
+    border: 5px solid rgb(123, 171, 255);
+    box-shadow: 0 4px 8px black;
+}
+
+.submit:hover{
+    background-color:rgb(0, 158, 0) ;
+    border: solid 10px rgb(84, 255, 84);
+    box-shadow: 0 4px 8px black;
+    cursor: pointer; ;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-weight: 500px;
+    font-size: 35px;
+}
+
+
+

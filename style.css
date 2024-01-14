@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background:url("HGYSBT.gif");
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(76, 0, 255);
+    margin: 0;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin: 5px 50px;
+    color: white;
+    font-family:cursive;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.navbar ul li a:hover{
+    color: rgb(0, 255, 132);
+}

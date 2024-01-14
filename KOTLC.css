@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background: url("Background.png");
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: rgb(13, 0, 197);
+    margin: 0;
+}
+
+.top-container{
+    background: url(KOTLC5.png);
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 5px 50px;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 1000;
+    .KOTLC{
+    color: blue;
+}
+
+}
+
+.navbar ul li a:hover{
+    color: rgb(0, 255, 153);
+}
+
+
+.SampleSticker {
+    width: 400px;
+    height: auto;
+    padding-top: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.StickerBox{
+    height:fit-content;
+    width: fit-content;
+    background-color: white;
+    border:solid rgb(82, 118, 164) 8px ;
+    border-radius: 70px;
+    padding: 30px;
+    margin:50px;
+    display: inline-flex;
+    /* padding: auto; */
+}
+
+.StickerBox:hover{
+    border: rgb(0, 69, 158)dashed 8px;
+    .Sticker{
+        width: 305px;
+    }
+}
+
+
+.Sticker{
+    width: 300px;
+}
