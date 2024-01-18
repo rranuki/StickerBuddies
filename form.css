@@ -37,7 +37,7 @@ body{
     position: fixed;
     left: 0%;
     top: 0%;
-    /* background-color: aqua; */
+    /* background-color: aqua;  */
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -50,21 +50,21 @@ label{
     font-family:cursive;
     font-size: 16px;
     font-weight: 100%;
-}    
+}  
 
 .buttonContainer{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 30%;
 }
 
 .submit{
     background-color: rgb(0, 84, 193);
-    height: 75px;
-    width: 300px;
+    height: 10vh;
+    width: 20vw;
     border-radius: 50px;
     font-family: cursive;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 115%;
     color: white;
     border: 5px solid rgb(123, 171, 255);
     box-shadow: 0 4px 8px black;
@@ -85,5 +85,63 @@ h1{
     font-size: 35px;
 }
 
+.loading{
+    display: none;
+    height: 70%;
+    width: auto;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+} 
 
+.spriggy{
+    display: none;
+    height: 50%;
+    width: auto;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+.goBack{
+    position: fixed;
+    left: 23%;
+    top: 73%;
+    background: linear-gradient(to right, darkblue, purple);
+    height: 8%;
+    width: 8%;
+    color: white;
+    border-radius: 50px;
+    border: solid 5px darkblue;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 100%;
+    /* box-shadow: 4px 8px 0px white; */
+}
+
+.goBack:hover{
+    filter:contrast(.75);
+}
+
+.Cmon{
+    display: none;
+    position: fixed;
+    left: 23%;
+    top: 35%;
+    background: linear-gradient(to right, rgb(6, 186, 0), rgb(0, 183, 73));
+    height: 12%;
+    width: 10%;
+    color: white;
+    border-radius: 50px;
+    border: solid 5px darkgreen;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 120%;
+}
+
+.Cmon:hover{
+    border: dashed 5px darkgreen;
+    filter: brightness(1.25);
+}

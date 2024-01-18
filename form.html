@@ -12,15 +12,17 @@
     <div class="background"></div>
     <div class="container">
         <div class="form">
+            <div id="loadingBox"><img class="loading" id="loading" src="Loading.gif"></img></div>
+            <div id="loadingBox"><img class="spriggy" id="spriggy" src="Sprigatito.png"></img></div>
             <h1 id="hi">In order to get a sticker, you will need to fill out this form!</h1>
             <form name="gform" id="gform" enctype="text/plain"
                 action="https://docs.google.com/forms/d/e/1FAIpQLSdL7nDCT3o8Ao0KYI_wyycA_sY-ZdLXuK-0fPUQhcQnkWXVCA/formResponse?"
                 target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="left">
-                    <label for="entry.2011975985">What is your name?</label><br><br><br><br>
-                    <label for="entry.1547255295">What school do you go to?</label><br><br><br><br>
-                    <label for="entry.1530722911">What is your class?</label><br><br><br><br>
-                    <label for="entry.1066450418">Finally, we need your email in case we need to contact you!</label><br><br><br><br>
+                    <label id="name" for="entry.2011975985">What is your name?</label><br><br><br><br>
+                    <label id="school" for="entry.1547255295">What school do you go to?</label><br><br><br><br>
+                    <label id="class" for="entry.1530722911">What is your class?</label><br><br><br><br>
+                    <label id="email" for="entry.1066450418">Finally, we need your email in case we need to contact you!</label><br><br><br><br>
                 </div>
                 <div class="right">
                     <input type="text" name="entry.2011975985" id="entry.2011975985" placeholder="Your Name"><br><br><br><br>
@@ -30,13 +32,19 @@
                     </select><br><br><br><br>
                     <input type="text" name="entry.1530722911" id="entry.1530722911" placeholder="Your Class"><br><br><br><br>
                     <input type="email" name="entry.1066450418" id="entry.1066450418" placeholder="Your Email"><br><br><br><br>
+                    <input type="text" name="entry.1873864105" id="entry.1873864105" placeholder="Your Sticker Name"><br><br><br><br>
                  </div>
                  <div class="buttonContainer">
-                    <a href="index.html"><button class="submit" value= "submit" type="submit" onclick="SendAnAlert()">Send your sticker buddy request!</button></a>
-                    <!-- <a href="index.html"><button>home</button></a> -->
+                    <a href="index.html"><button id="submitIt" class="submit" value= "submit" type="submit" onclick="SendAnAlert()">Send your sticker buddy request!</button></a>
+                    
+                    <a href="KOTLC.html"><button type="button" class="goBack" id="goBack">Go back!</button></a>
+                    <a href="KOTLC.html"><button type="button" class="Cmon" id="cmon">Go back!</button></a>
                </div>
+               
             </form>
+           
         </div>
+         
     </div>
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
