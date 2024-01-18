@@ -80,36 +80,51 @@ body {
     color: rgb(0, 255, 153);
 }
 
-
-.SampleSticker {
-    width: 400px;
-    height: auto;
-    padding-top: 75px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .StickerBox{
     height:fit-content;
     width: fit-content;
     background-color: white;
     border:solid rgb(82, 118, 164) 8px ;
     border-radius: 70px;
-    padding: 30px;
-    margin:50px;
+    padding: 5vh;
+    /* margin-left:5vw; */
+    /* margin-top:5vw;
+    margin-right: 5vw;
+    margin-left: 5vw; */
     display: inline-flex;
     /* padding: auto; */
 }
 
-.StickerBox:hover{
+/* .StickerBox:hover{
     border: rgb(0, 69, 158)dashed 8px;
     .Sticker{
         width: 305px;
     }
-}
+} */
 
 
 .Sticker{
-    width: 300px;
+    width:40vh;
+    /* height: auto; */
+}
+
+
+.Sticker-Container{
+
+    height: fit-content;
+    /* margin-top: 90vh; */
+    background-color: blueviolet;
+    /* margin-left: 50px; */
+    text-align: center;
+    /* display: inline-flex; */
+    /* width: 50%; */
+    /* padding:5px; */
+}
+
+.boo{
+    margin-top:0;
+    height: 100%;
+    background-color: rgb(0, 255, 136);
+    width: 90vw;
+    margin: auto;
 }
