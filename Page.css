@@ -94,7 +94,7 @@ body {
     height:fit-content;
     width: fit-content;
     background-color: white;
-    border:solid rgb(82, 118, 164) 8px ;
+    border:dashed rgb(82, 118, 164) 8px ;
     border-radius: 70px;
     padding: 30px;
     margin:50px;
@@ -105,7 +105,7 @@ body {
 .StickerBox:hover{
     border: rgb(0, 69, 158)dashed 8px;
     .Sticker{
-        width: 305px;
+        width: 21vw;
     }
 }
 
