@@ -94,7 +94,7 @@ body {
     height:fit-content;
     width: fit-content;
     background-color: white;
-    border:dashed rgb(82, 118, 164) 8px ;
+    border:solid rgb(82, 118, 164) 8px ;
     border-radius: 70px;
     padding: 30px;
     margin:50px;
@@ -112,5 +112,4 @@ body {
 
 .Sticker{
     width: 20vw;
-/*     border-radius: 50%; */
 }
