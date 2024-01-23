@@ -9,7 +9,7 @@ body {
     width: 100%;
     justify-content: space-between;
     /* align-items: center; */
-    background-color: dodgerblue;
+    background-color: yellow;
     background-filter: blur(5px) brightness(.85);
     margin: 0;
 }
@@ -79,10 +79,10 @@ body {
 }
 
 .navbar ul li a:hover{
-    color: rgb(0, 255, 153);
+    color: springgreen;
     
         .AboutUs ul li a:hover{
-        color: rgb(0, 255, 153);
+        color: hotpink;
         }
 }
 
