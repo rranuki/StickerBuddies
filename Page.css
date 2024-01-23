@@ -8,9 +8,13 @@ body {
     position: fixed;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    background-color: seagreen;
+/*     align-items: center; */
+    background-color: fuchsia;
     margin: 0;
+}
+
+.navbar ul{
+    align-items:center;
 }
 
 .KOTLC{
