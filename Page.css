@@ -13,11 +13,11 @@ body {
     margin: 0;
 }
 
-.navbar .styleasy{
+.styleasy{
     align-items:center;
     position:fixed;
     width:100vw;
-}
+} 
 
 .KOTLC{
     background: url(KOTLC5.png);
