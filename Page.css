@@ -9,7 +9,7 @@ body {
     width: 100%;
     justify-content: space-between;
     /* align-items: center; */
-    background-color: blue;
+    background-color: crimson;
     background-filter: blur(5px) brightness(.85);
     margin: 0;
 }
@@ -70,7 +70,7 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    margin: 3vw;
+    margin: 2vw;
     color: rgb(255, 255, 255);
     font-family: cursive;
     font-size: 1.5vw;
