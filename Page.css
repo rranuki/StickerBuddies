@@ -7,9 +7,10 @@ body {
     display: flex;
     position: fixed;
     width: 100%;
+    height: 3vh;
     justify-content: space-between;
 /*     align-items: center; */
-    background-color: green;
+    background-color: blue;
     margin: 0;
 }
 
