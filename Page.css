@@ -12,6 +12,11 @@ body {
 /*     align-items: center; */
     background-color: blue;
     margin: 0;
+
+    .AboutUs{
+        color:hotpink;
+    }
+    
 }
 
 /* .styleasy{
