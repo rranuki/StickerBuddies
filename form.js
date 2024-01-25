@@ -3,6 +3,8 @@
     document.getElementById("entry.1873864105").value = selectedImage.page + " | " + selectedImage.name + " | " + selectedImage.id + " | " + selectedImage.artist;
     
     function SendAnAlert(){
+
+        if(document.getElementById("entry.2011975985").style = "display:none;"){
     document.getElementById("entry.2011975985").style = "display:none;"
     document.getElementById("entry.1547255295").style = "display:none;"
     document.getElementById("entry.1530722911").style = "display:none;"
@@ -23,5 +25,7 @@
         document.getElementById("loading").style = "display:none;"
         document.getElementById("cmon").style = "display:unset;"
     }, 3000);
-    
+        }else{
+            alert("fill it in or else!")
+        }
 }
