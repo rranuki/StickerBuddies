@@ -1,4 +1,5 @@
     document.getElementById("entry.1873864105").style = "display:none;"
+document.getElementById("entry.1547255295").style = "display:none;"
     const selectedImage = JSON.parse(localStorage.getItem('selectedImage'));
     document.getElementById("entry.1873864105").value = selectedImage.page + " | " + selectedImage.name + " | " + selectedImage.id + " | " + selectedImage.artist;
     
