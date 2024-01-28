@@ -25,7 +25,7 @@
         document.getElementById("hi").style = "color:rgb(172,0,0);"
         document.getElementById("entry.1066450418").style="border:solid .5vh rgb(172,0,0);"
     } else{
-
+    document.getElementById("submitIt").type= "submit";
     document.getElementById("entry.2011975985").style = "display:none;"
     document.getElementById("entry.1547255295").style = "display:none;"
     document.getElementById("entry.1530722911").style = "display:none;"
