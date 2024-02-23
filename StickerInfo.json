@@ -22,5 +22,14 @@
         "artist": "Ranuki Ranasinghe",
         "path": "StickerS/Marella2.jpg",
         "page": "KOTLC"
-    }
+    },
+    {
+        "id": 4,
+        "name": "Dexter Dizznee",
+        "description": "Dex Alvin Dizznee is one of the main characters in the series, Keeper of the Lost Cities, written by Shannon Messenger. He is a member of the Black Swan and Team Valiant, and is a Level Four prodigy at Foxfire. Dex is one of the Lost Cities' most powerful and creative Technopaths. He is also Sophie Foster's adoptive cousin and best friend. He was one of the very first elves Sophie met after she moved into the Lost Cities.",
+        "artist": "Ranuki Ranasinghe",
+        "path": "StickerS/Dex.jpg",
+        "page": "KOTLC"
+    },
+    
 ]
