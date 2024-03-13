@@ -19,13 +19,13 @@ body{
     display: flex;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     margin: 2vw;
     margin-left: 3vw;
-    color: white;
-    font-family:cursive;
-    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-size: 1.25vw;
     font-weight: 1000;
 }
 
