@@ -105,7 +105,7 @@ function removeCartItem(event) {
 }
 
 function AddToCart() {
-    // if (numberInCart < 5) {
+    if (numberInCart < 5) {
                 // const imagePicked = selectedImage.path
                 // window.location.href = 'StickerDescription.html'
                 // console.log(selectedImage)
@@ -160,7 +160,7 @@ function AddToCart() {
 
             }
             // UPDATE()
-// }
+}
 
 listCartHTML.addEventListener('click', (event) => {
     let positionClicked = event.target
