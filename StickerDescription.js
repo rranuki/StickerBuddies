@@ -158,6 +158,8 @@ function AddToCart() {
                     RememberThis()
                 }
 
+            } else{
+                    alert('Sorry, but your cart is full of stickers!')
             }
             // UPDATE()
 }
