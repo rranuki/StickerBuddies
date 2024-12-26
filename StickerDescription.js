@@ -18,7 +18,7 @@ var waaa =  localStorage.getItem('bb')
 // var CartFromOldPage = localStorage.getItem('aa')
 
 // console.log(CartFromOldPage)
-if(waaa == 'undefined'){
+if(waaa == 'undefined' || waaa == 'null'){
     waaa = []
     CartFromOldPage = waaa
 }else{
