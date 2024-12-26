@@ -113,7 +113,7 @@ function AddToCart() {
                     for (let j = 0; j < CartFromOldPage.length; j++) {
                         const part = CartFromOldPage[j];
                         theNewCart.push(part[0])
-                        // console.log(theNewCart)
+                        console.log('the New Cart:'+theNewCart)
                     }
                 
                 if (theNewCart.includes(JSON.stringify(selectedImage.id))) {
