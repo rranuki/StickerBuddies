@@ -3,32 +3,66 @@ body{
     background: url(Background.png);
 }
 
-.navbar{
+.navbar {
     display: flex;
     position: fixed;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    background-color: rgb(13, 0, 197);
+    height: 9vh;
+    /* align-items: center; */
+    background-color: blue;
     margin: 0;
 }
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
     display: flex;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
-    margin: 5px 50px;
-    color: white;
-    font-family:cursive;
-    font-size: 20px;
+    margin: 2vw;
+    margin-left: 3vw;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-size: 1.2vw;
     font-weight: 1000;
 }
 
 .navbar ul li a:hover{
-    color: rgb(0, 255, 132);
+    color: springgreen;
+}
+
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+
+body.showcart .container{
+    transform: translateX(-250px);
+}
+.navbar .icon-cart{
+    position: relative;
+    cursor: pointer;
+}
+.navbar .icon-cart svg{
+    color: rgb(255, 255, 255);
+    height: 110%;
+}
+
+.navbar .icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius:50% ;
+    position: absolute;
+    top: 50%;
+    right: 3px;
 }
 
 .StickerBox{
@@ -37,23 +71,24 @@ body{
     background-color: white;
     border:solid rgb(82, 118, 164) 8px ;
     border-radius: 70px;
-    padding: 5%;
-    margin-left:3vw;
-    margin-top:12vh;
-    margin-bottom: 0;
+    padding: 30px;
+    margin-right:50px;
+    margin-left:50px;
+    margin-top:72px;
+    margin-bottom: 0px;
 }
 
 .Sticker{
-    width: 23vw;
+    width: 350px;
 }
 
-.Description{
-     display: inline flex;
-} 
+.stuff{
+    display: inline flex;
+}
 
 .right{
-    margin-top: 15vh;
-    margin-left: 10vw;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
 .name{
@@ -88,4 +123,113 @@ body{
 .GETNOW:hover{
     color: lightcoral;
     border: dashed;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: rgb(0, 11, 84);
+    color: white;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s;
+}
+
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    font-family: cursive;
+}
+
+.cartTab .LABUTTONS{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+} 
+.cartTab .LABUTTONS button{
+    background-color:rgb(232, 94, 207);
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+} 
+
+.cartTab .LABUTTONS .close{
+    background-color: rgb(114, 116, 231);
+}
+
+.cartTab .LABUTTONS .close:hover{
+    background-color: #5c57bd;
+}
+.cartTab .LABUTTONS .checkout:hover{
+    background-color:rgb(168, 74, 159);
+}
+
+.cartTab .listCart .CartItem img{
+    width: 100%;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+.cartTab .listCart .CartItem{
+    display: grid;
+    grid-template-columns: 70px 120px 1fr 50px;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    /* display: inline; */
+}
+
+.listCart .Remove{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(255, 57, 57);
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 50%;
+    border: 2px solid rgb(67, 0, 0);
+    color:rgb(67, 0, 0);
+}
+
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: rgb(48, 0, 48);
+    font-family:cursive;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quantity input{
+    width: 50px;
+}
+
+.listCart .name{
+    font-family: cursive;
+    font-size: 15px;
+
+}
+
+
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: default;
+}
+
+.listCart .CartItem:nth-child(even){
+    background-color:rgb(0, 17, 124);
+}
+
+.listCart{
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar{
+    width: 0;
 }

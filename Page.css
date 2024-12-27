@@ -3,15 +3,163 @@ body {
     background: url("Background.png");
 }
 
+
+
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+
+body.showcart .container{
+    transform: translateX(-250px);
+}
+.navbar .icon-cart{
+    position: relative;
+    cursor: pointer;
+}
+.navbar .icon-cart svg{
+    color: rgb(255, 255, 255);
+    height: 110%;
+}
+
+.navbar .icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius:50% ;
+    position: absolute;
+    top: 50%;
+    right: 3px;
+}
 .navbar {
     display: flex;
     position: fixed;
     width: 100%;
     justify-content: space-between;
+    height: 9vh;
     /* align-items: center; */
-    background-color: rgb(13, 0, 197);
+    background-color: blue;
     margin: 0;
 }
+.cartTab{
+    width: 400px;
+    background-color: rgb(0, 11, 84);
+    color: white;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s;
+}
+
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    font-family: cursive;
+}
+
+.cartTab .LABUTTONS{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+} 
+.cartTab .LABUTTONS button{
+    background-color:rgb(232, 94, 207);
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+} 
+
+.cartTab .LABUTTONS .close{
+    background-color: rgb(114, 116, 231);
+}
+
+.cartTab .LABUTTONS .close:hover{
+    background-color: #5c57bd;
+}
+.cartTab .LABUTTONS .checkout:hover{
+    background-color:rgb(168, 74, 159);
+}
+
+.cartTab .listCart .CartItem img{
+    width: 100%;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+.cartTab .listCart .CartItem{
+    display: grid;
+    grid-template-columns: 70px 120px 1fr 50px;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    /* display: inline; */
+}
+
+.listCart .Remove{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(255, 57, 57);
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 50%;
+    border: 2px solid rgb(67, 0, 0);
+    color:rgb(67, 0, 0);
+}
+
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: rgb(48, 0, 48);
+    font-family:cursive;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quantity input{
+    width: 50px;
+}
+
+.listCart .name{
+    font-family: cursive;
+    font-size: 15px;
+
+}
+
+
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: default;
+}
+
+.listCart .CartItem:nth-child(even){
+    background-color:rgb(0, 17, 124);
+}
+
+.listCart{
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+/* .styleasy{
+    align-items:center;
+    position:fixed;
+    width:100vw;
+}  */
 
 .KOTLC{
     background: url(KOTLC5.png);
@@ -61,6 +209,14 @@ body {
     justify-content:center;
     align-items: center;
 }
+.AI{
+    background: url(AI.jpg);
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 
 .navbar ul {
     list-style-type: none;
@@ -69,15 +225,30 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    margin: 5px 50px;
+    margin: 2vw;
+    margin-left: 3vw;
     color: rgb(255, 255, 255);
     font-family: cursive;
-    font-size: 20px;
+    font-size: 1.2vw;
     font-weight: 1000;
 }
 
 .navbar ul li a:hover{
-    color: rgb(0, 255, 153);
+    color: springgreen;
+    
+/*         .AboutUs ul li a:hover{
+        color: hotpink;
+        } */
+}
+
+
+.SampleSticker {
+    width: 400px;
+    height: auto;
+    padding-top: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .StickerBox{
@@ -86,45 +257,20 @@ body {
     background-color: white;
     border:solid rgb(82, 118, 164) 8px ;
     border-radius: 70px;
-    padding: 5vh;
-    /* margin-left:5vw; */
-    /* margin-top:5vw;
-    margin-right: 5vw;
-    margin-left: 5vw; */
+    padding: 2vw;
+    margin:3vw;
     display: inline-flex;
     /* padding: auto; */
 }
 
-/* .StickerBox:hover{
+.StickerBox:hover{
     border: rgb(0, 69, 158)dashed 8px;
     .Sticker{
-        width: 305px;
+        width: 21vw;
     }
-} */
+}
 
 
 .Sticker{
-    width:40vh;
-    /* height: auto; */
-}
-
-
-.Sticker-Container{
-
-    height: fit-content;
-    /* margin-top: 90vh; */
-    background-color: blueviolet;
-    /* margin-left: 50px; */
-    text-align: center;
-    /* display: inline-flex; */
-    /* width: 50%; */
-    /* padding:5px; */
-}
-
-.boo{
-    margin-top:0;
-    height: 100%;
-    background-color: rgb(0, 255, 136);
-    width: 90vw;
-    margin: auto;
+    width: 20vw;
 }

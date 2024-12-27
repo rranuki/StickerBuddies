@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="Page.css">
 </head>
 
-<body>
-    <div class="navbar" id="navbar">
+<body id="body">
+        <div class="navbar" id="navbar">
         <a href="index.html" class="Home" id="Home"><img src="WhatAboutThisOne.svg" alt="Logo"></a>
         <ul>
             <li class="Pokemons"><a href="Pokemons.html">Pokemons</a></li>
@@ -18,9 +18,25 @@
             <li class="Comic"><a href="Comic.html">Comic</a></li>
             <li class="KeeperOfTheLostCities"><a href="KOTLC.html">KOTLC</a></li>
             <li class="WarriorCats"><a href="WarriorCats.html">Warrior Cats</a></li>
+            <li class="ArtificialIntelligent"><a href="AIGenerated.html">AI Generated</a></li>
             <li class="AboutUs"><a href="#">About Us</a></li>
+            <div class="icon-cart" id="CartIcon">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
+                  </svg>
+                  <span id="DaSPAN">0</span>
+            </div>
         </ul>
     </div>
+    <div class="cartTab">
+        <h1>Your Cart</h1>
+        <div class="listCart" id="listCart"></div>
+        <div class="LABUTTONS">
+            <button class="close" id="close">CLOSE</button>
+            <button class="checkout" onclick="CHECKOUT()">CHECKOUT!</button>
+        </div>
+    </div>
+
         <div class="Animales"></div>
 
         
