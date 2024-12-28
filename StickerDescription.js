@@ -7,10 +7,17 @@ document.getElementById('Artist').innerText = 'Sticker Art by ' + selectedImage.
 
 let theNewCart = []
 let numberInCart = 0
-let carts = []
+var carts = ''
 var CartFromOldPage = ''
 // let singleItem = []
-// var PastCart = JSON.parse(localStorage.getItem('CART'));
+var LetsCheck = localStorage.getItem('CART');
+if(LetsCheck == 'undefined' || waaa == null){
+    LetsCheck = []
+    carts = LetsCheck
+}else{
+    carts = JSON.parse(LetsCheck)
+}
+
 // console.log(PastCart)
 
 // var CartFromOldPage = JSON.parse(localStorage.getItem('bb'))
@@ -105,18 +112,17 @@ function removeCartItem(event) {
 }
 
 function AddToCart() {
-    if (numberInCart < 5) {
                 // const imagePicked = selectedImage.path
                 // window.location.href = 'StickerDescription.html'
                 // console.log(selectedImage)
                 
-                    for (let j = 0; j < CartFromOldPage.length; j++) {
-                        const part = CartFromOldPage[j];
-                        theNewCart.push(part[0])
-                        console.log('the New Cart:'+theNewCart)
-                    }
+                    // for (let j = 0; j < CartFromOldPage.length; j++) {
+                    //     const part = CartFromOldPage[j];
+                    //     theNewCart.push(part[0])
+                    //     console.log('the New Cart:'+theNewCart)
+                    // }
                 
-                if (theNewCart.includes(JSON.stringify(selectedImage.id))) {
+                if (carts.includes(JSON.stringify(selectedImage.id))) {
                     let getting = document.getElementsByClassName("CartItem")
                     // console.log(getting)
                     for (let i = 0; i < getting.length; i++) {
@@ -131,6 +137,7 @@ function AddToCart() {
                         RememberThis()
                     }
                 } else {
+    if (numberInCart < 5) {
                     const newItem = document.createElement("div")
                     newItem.classList = "CartItem"
                     // partOfCart.splice(0,0,selectedImage.id)
@@ -156,11 +163,12 @@ function AddToCart() {
                     IconCartSpan.innerText = numberInCart
                     StartRemove()
                     RememberThis()
-                }
-
             } else{
                     alert('Sorry, but your cart is full of stickers!')
             }
+                }
+
+
             // UPDATE()
 }
 
@@ -212,7 +220,7 @@ listCartHTML.addEventListener('click', (event) => {
 function RememberThis(){
     console.log("Enter RememberThis()")
     full = []
-    // carts = []
+    carts = []
     console.log("Yo Bro!")
     // let item = document.g(itemID)
     let theSet = document.getElementsByClassName("CartItem")
@@ -221,7 +229,7 @@ function RememberThis(){
         console.log(RightNow)
         let OneBitOfArray = []
         OneBitOfArray.push(RightNow.dataset.id)
-        // carts.push(RightNow.dataset.id)
+        carts.push(RightNow.dataset.id)
         // console.log(carts)
 
         let Quant = RightNow.querySelector(".number")
