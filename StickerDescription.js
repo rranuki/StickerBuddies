@@ -217,6 +217,8 @@ listCartHTML.addEventListener('click', (event) => {
             
 // }
 
+var SavedCart = ''
+
 function RememberThis(){
     console.log("Enter RememberThis()")
     full = []
@@ -236,7 +238,7 @@ function RememberThis(){
         console.log(Quant)
         OneBitOfArray.push(Quant.innerText)
         full.push(OneBitOfArray)
-        var SavedCart = JSON.stringify(full)
+        SavedCart = JSON.stringify(full)
         console.log(SavedCart + "hohoho")
     }
     localStorage.setItem("bb", SavedCart);
@@ -307,6 +309,20 @@ function FetchItPlease(StickerID, StickerQuant) {
         .catch(error => console.error('Error loading JSON file:', error))
         
     console.log("End FetchItPlease()")
+}
+
+function CHECKOUT(){
+    console.log(listCartHTML.getElementsByClassName('CartItem').length)
+    for (let i = listCartHTML.getElementsByClassName('CartItem').length - 1; i >= 0; --i) {
+        const item = listCartHTML.getElementsByClassName('CartItem')[i];
+        // item.remove()
+        console.log(item)
+        item.remove()
+    }
+    console.log(SavedCart)
+    localStorage.setItem("whoa", SavedCart);
+    RememberThis()
+    window.location.href = 'form.html'
 }
 
 // function CHECKOUT() {
