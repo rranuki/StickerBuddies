@@ -1,6 +1,14 @@
+    let toBeSent = ''
+    var eachTime = '|'
     document.getElementById("entry.1873864105").style = "display:none;"
-    const selectedImage = JSON.parse(localStorage.getItem('selectedImage'));
-    document.getElementById("entry.1873864105").value = selectedImage.page + " | " + selectedImage.name + " | " + selectedImage.id + " | " + selectedImage.artist;
+    const CartFromOldPage = JSON.parse(localStorage.getItem("whoa"));
+    console.log(CartFromOldPage)
+    for (let i = 0; i < CartFromOldPage.length; i++) {
+        const partywarty = CartFromOldPage[i];
+        eachTime = eachTime + partywarty[0] + 'x' + partywarty[1] + '|'
+    }
+    console.log(eachTime)
+    document.getElementById("entry.1873864105").value = eachTime
     // console.log(document.getElementById("entry.1873864105").getAttribute(length))
 
     
