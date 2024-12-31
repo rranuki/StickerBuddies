@@ -319,7 +319,10 @@ function FetchItPlease(StickerID, StickerQuant) {
 }
 
 function CHECKOUT(){
-    if (confirm("Are you sure you have finished all your shopping? Your cart will be cleared as soon as you are sent to the form page.")){
+    if (SavedCart == '' || SavedCart == []){
+        alert("You cannot place an empty order!")
+    }else{
+        if (confirm("Are you sure you have finished all your shopping? Your cart will be cleared as soon as you are sent to the form page.")){
     console.log(listCartHTML.getElementsByClassName('CartItem').length)
     for (let i = listCartHTML.getElementsByClassName('CartItem').length - 1; i >= 0; --i) {
         const item = listCartHTML.getElementsByClassName('CartItem')[i];
@@ -327,9 +330,9 @@ function CHECKOUT(){
         console.log(item)
         item.remove()
     }
-    RememberThis()
     console.log(SavedCart)
     localStorage.setItem("whoa", SavedCart);
+    RememberThis()
    
     setTimeout(() => {
         window.location.href = 'form.html'
@@ -337,6 +340,8 @@ function CHECKOUT(){
     } else{
         return
     }
+    }
+    
 
 }
 
