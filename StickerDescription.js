@@ -21,11 +21,11 @@ if(LetsCheck == 'undefined' || waaa == null){
 // console.log(PastCart)
 
 // var CartFromOldPage = JSON.parse(localStorage.getItem('bb'))
-var waaa =  localStorage.getItem('bb')
+var waaa =  localStorage.getItem('grrr')
 // var CartFromOldPage = localStorage.getItem('aa')
 
 // console.log(CartFromOldPage)
-if(waaa == 'undefined' || waaa == null){
+if(waaa == 'undefined' || waaa == null || waaa == ''){
     waaa = []
     CartFromOldPage = waaa
 }else{
@@ -226,7 +226,12 @@ function RememberThis(){
     console.log("Yo Bro!")
     // let item = document.g(itemID)
     let theSet = document.getElementsByClassName("CartItem")
-    for (let i = 0; i < theSet.length; i++) {
+    console.log(theSet)
+    if (theSet.length == 0) {
+        SavedCart = ''
+        console.log("aha!")
+    } else {
+         for (let i = 0; i < theSet.length; i++) {
         const RightNow = theSet[i];
         console.log(RightNow)
         let OneBitOfArray = []
@@ -240,8 +245,10 @@ function RememberThis(){
         full.push(OneBitOfArray)
         SavedCart = JSON.stringify(full)
         console.log(SavedCart + "hohoho")
+        }
     }
-    localStorage.setItem("bb", SavedCart);
+   
+    localStorage.setItem("grrr", SavedCart);
     localStorage.setItem("CART", carts);
 
     console.log("End RememberThis()")
@@ -312,6 +319,7 @@ function FetchItPlease(StickerID, StickerQuant) {
 }
 
 function CHECKOUT(){
+    if (confirm("Are you sure you have finished all your shopping? Your cart will be cleared as soon as you are sent to the form page.")){
     console.log(listCartHTML.getElementsByClassName('CartItem').length)
     for (let i = listCartHTML.getElementsByClassName('CartItem').length - 1; i >= 0; --i) {
         const item = listCartHTML.getElementsByClassName('CartItem')[i];
@@ -319,12 +327,22 @@ function CHECKOUT(){
         console.log(item)
         item.remove()
     }
+    RememberThis()
     console.log(SavedCart)
     localStorage.setItem("whoa", SavedCart);
-    RememberThis()
-    window.location.href = 'form.html'
+   
+    setTimeout(() => {
+        window.location.href = 'form.html'
+    }, 100);
+    } else{
+        return
+    }
+
 }
 
+// function mmmm(){
+//     RememberThis()
+// }
 // function CHECKOUT() {
 //     sendIt =[]
 //     console.log(carts)
