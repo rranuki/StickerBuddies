@@ -2,12 +2,12 @@
     var eachTime = '|'
     document.getElementById("entry.1873864105").style = "display:none;"
     const CartFromOldPage = JSON.parse(localStorage.getItem("whoa"));
-    console.log(CartFromOldPage)
+    // console.log(CartFromOldPage)
     for (let i = 0; i < CartFromOldPage.length; i++) {
         const partywarty = CartFromOldPage[i];
         eachTime = eachTime + partywarty[0] + 'x' + partywarty[1] + '|'
     }
-    console.log(eachTime)
+    // console.log(eachTime)
     document.getElementById("entry.1873864105").value = eachTime
     // console.log(document.getElementById("entry.1873864105").getAttribute(length))
 
