@@ -164,7 +164,7 @@ body.showcart .container{
 }
 
 .listCart .CartItem:nth-child(even){
-    background-color:rgb(90, 0, 90);
+    background-color:rgb(0, 17, 124);
 }
 
 .listCart{
